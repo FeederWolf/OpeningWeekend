@@ -16,7 +16,18 @@ namespace OpeningWeekend
             {
                 marci.Add(new Class1(fasz));
             }
-            Console.WriteLine();
+            Console.WriteLine("3. feladat: Filmek száma az állományban: " + marci.Count + " db");
+
+            int osszeg = 0;
+
+            foreach (var i in marci)
+            {
+                if (i.forgalmazo == "UIP")
+                {
+                    osszeg += i.bevel;
+                }
+            }
+            Console.WriteLine(osszeg);
         }
     }
 }
