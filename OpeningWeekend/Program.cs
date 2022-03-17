@@ -44,7 +44,32 @@ namespace OpeningWeekend
             Console.WriteLine($"\tBevétel az első héten: {vmax.bevel} Ft");
             Console.WriteLine($"\tLátogatók száma: {vmax.latogato}$");
 
+            int van = 0;
 
+            foreach (var i in marci)
+            {
+                if (i.eredetiCim == "W%" || i.magyarCim == "W%")
+                {
+                    van++;
+                }
+            }
+
+            if (van > 0)
+            {
+                Console.WriteLine("6. feladat: van ilyen film!");
+            }
+            else
+            {
+                Console.WriteLine("6. feladat: nincs ilyen film!");
+            }
+
+            foreach (var i in marci)
+            {
+                if (i.forgalmazo == "InterCom")
+                {
+                    
+                }
+            }
 
         }
     }
