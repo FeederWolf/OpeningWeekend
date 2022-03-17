@@ -18,7 +18,7 @@ namespace OpeningWeekend
             }
             Console.WriteLine("3. feladat: Filmek száma az állományban: " + marci.Count + " db");
 
-            int osszeg = 0;
+            long osszeg = 0;
 
             foreach (var i in marci)
             {
@@ -27,7 +27,22 @@ namespace OpeningWeekend
                     osszeg += i.bevel;
                 }
             }
-            Console.WriteLine(osszeg);
+            Console.WriteLine("4. feladat: UIP Duna Film forgalmazó 1. hetes bevételeinek összege: " + osszeg + " Ft");
+
+            Class1 vmax = marci[0];
+            foreach (var i in marci)
+            {
+                if (i.idotartalom > vmax.idotartalom)
+                {
+                    vmax = i;
+                }
+            }
+            Console.WriteLine("7. feladat: Leghosszabb fuvar:");
+            Console.WriteLine($"\tFuvar hossza: {vmax.idotartalom} másodperc");
+            Console.WriteLine($"\tTaxi azonosító: {vmax.id}");
+            Console.WriteLine($"\tMegtett távolság: {vmax.tavolsag} km");
+            Console.WriteLine($"\tViteldíj: {vmax.viteldij}$");
+
         }
     }
 }
