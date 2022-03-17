@@ -32,16 +32,19 @@ namespace OpeningWeekend
             Class1 vmax = marci[0];
             foreach (var i in marci)
             {
-                if (i.idotartalom > vmax.idotartalom)
+                if (i.latogato > vmax.latogato)
                 {
                     vmax = i;
                 }
             }
-            Console.WriteLine("7. feladat: Leghosszabb fuvar:");
-            Console.WriteLine($"\tFuvar hossza: {vmax.idotartalom} másodperc");
-            Console.WriteLine($"\tTaxi azonosító: {vmax.id}");
-            Console.WriteLine($"\tMegtett távolság: {vmax.tavolsag} km");
-            Console.WriteLine($"\tViteldíj: {vmax.viteldij}$");
+            Console.WriteLine("5. feladat: Legtöbb látogató az első  héten:");
+            Console.WriteLine($"\tEredeti cím: {vmax.eredetiCim} másodperc");
+            Console.WriteLine($"\tMagyar cím: {vmax.magyarCim}");
+            Console.WriteLine($"\tForgalmazó: {vmax.forgalmazo}");
+            Console.WriteLine($"\tBevétel az első héten: {vmax.bevel} Ft");
+            Console.WriteLine($"\tLátogatók száma: {vmax.latogato}$");
+
+
 
         }
     }
