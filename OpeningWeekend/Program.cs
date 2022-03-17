@@ -48,10 +48,16 @@ namespace OpeningWeekend
 
             foreach (var i in marci)
             {
-                if (i.eredetiCim == "W%" || i.magyarCim == "W%")
+                string[] lajos = new string[0];
+                i.eredetiCim.Split(' ');
+                i.magyarCim.Split(' ');
+                //lajos.add(i);
+                /*
+                 if (i.eredetiCim == "W%" || i.magyarCim == "W%")
                 {
                     van++;
                 }
+                 */
             }
 
             if (van > 0)
@@ -63,13 +69,7 @@ namespace OpeningWeekend
                 Console.WriteLine("6. feladat: nincs ilyen film!");
             }
 
-            foreach (var i in marci)
-            {
-                if (i.forgalmazo == "InterCom")
-                {
-                    
-                }
-            }
+            
 
         }
     }
