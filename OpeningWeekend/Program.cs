@@ -48,16 +48,13 @@ namespace OpeningWeekend
 
             foreach (var i in marci)
             {
-                string[] lajos = new string[0];
-                i.eredetiCim.Split(' ');
-                i.magyarCim.Split(' ');
-                //lajos.add(i);
-                /*
-                 if (i.eredetiCim == "W%" || i.magyarCim == "W%")
+                if (i == 'W')
                 {
-                    van++;
+
                 }
-                 */
+
+
+                
             }
 
             if (van > 0)
