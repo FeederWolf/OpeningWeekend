@@ -48,15 +48,11 @@ namespace OpeningWeekend
 
             foreach (var i in marci)
             {
-                if (i == 'W')
+                if (i.eredetiCim.ElementAt(0) == 'W' || i.magyarCim.ElementAt(0) == 'W' || i.eredetiCim.ElementAt(0) == 'w' || i.magyarCim.ElementAt(0) == 'w')
                 {
-
+                    van++;
                 }
-
-
-                
             }
-
             if (van > 0)
             {
                 Console.WriteLine("6. feladat: van ilyen film!");
